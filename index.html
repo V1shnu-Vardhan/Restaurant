@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navbar starts-->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">all</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reservation">Reservation</a>
+              </li>
+           
+            </ul>
+            <a href="#" class=" btn btn-brand">Order Online</a>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar ends-->
+
+    <!--Hero slide starts-->
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item text-center slider1 vh-100 active">
+            <div class=" container h-100 d-flex  align-items-center justify-content-center" style="  text-shadow: 2px 2px 4px white;">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-8">
+                        <h3 class=" text-white">Welcome To Burrapadu Restaurant </h3>
+                        <h1 class=" display-1 text-white">Fresh & Tasty Foods</h1>
+                        <a href="#" class="btn btn-brand">Reservation</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center slider2 vh-100">
+            <div class=" container h-100 d-flex align-items-center justify-content-center" style="  text-shadow: 2px 2px 4px white;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h3 class=" text-white">Welcome To Burrapadu Restaurant </h3>
+                        <h1 class=" display-1 text-white ">Grilled & flavour-filled foods</h1> 
+                        <a href="#" class="btn btn-brand">Reservation</a>
+                    </div>
+                </div>
+            </div>
+         
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!--Hero slide ends-->
+
+    <!--About section starts-->
+    <section id="about">
+        <div class=" container">
+            <div class="row gy-4">
+                <div class=" col-lg-5">
+                    <img src="assets/about.avif" alt="" width="80%">
+                </div>
+                <div class=" col-lg-5">
+                    <h1>About Us</h1>
+                    <div class="divider my-4"></div>
+                    <p>Welcome to Burrapadu, where we serve a fusion of traditional and contemporary flavors across breakfast, lunch, and dinner. Our menu celebrates the essence of all-style cooking with fresh ingredients, offering everything from quick tiffins to hearty meals.</p>
+                    <p>Whether you're starting your day with a nutritious breakfast, enjoying a casual lunch, or relaxing over dinner, our dishes are crafted to satisfy and nourish. We’re committed to bringing the warmth of all-cooked meals to your table, every time. Join us and savor the flavors of freshness and taste!</p>
+                    <p>Join us in celebrating the true taste of South India! Whether it’s a family meal or a special occasion, we’re here to spice up your day. Don’t just eat; experience the culture and heritage through every bite.`</p>
+                    <a href="#menu" class="btn btn-brand">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section ends-->
+     <!--Menu section starts-->
+     <section id="menu" class="bg-light">
+      <div class=" container">
+        <div class="row">
+          <div class="col-12 intro-text">
+            <h1>Explore our menu</h1>
+            <p>Our restaurant offers a diverse and delicious menu featuring breakfast tiffins, wholesome lunch specials, and delightful dinner options to suit every palate. From traditional dishes to modern favorites, we ensure fresh ingredients and authentic flavors in every bite. Indulge in our chef-crafted meals, perfect for casual dining or special celebrations.</p>
+          </div>
+        </div>
+      </div>
+
+     <div class=" container">
+      <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link " id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Dinner</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+        <div class=" row gy-4">
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/tiffen.webp" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(5.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Tiffens</h5>
+                <p class="small">Start your day with our delicious and wholesome tiffin options, crafted to satisfy your morning cravings</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/lunch.webp" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(12.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Lunch</h5>
+                <p class="small">From traditional favorites to contemporary delights, we ensure a satisfying midday meal for everyone!</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/dinner.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(8.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Dinner</h5>
+                <p class="small">offering a mix of hearty classics and gourmet specialties. Enjoy a perfect evening with flavors that will leave you wanting more!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/b-1.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(8.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Dosa</h5>
+                <p class="small">Start your day with the crispy delight of our signature Dosa, served hot with flavorful chutneys and sambar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/b-2.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(8.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Chole-Bhature</h5>
+                <p class="small">Chole Bhature, a perfect blend of spicy chickpea curry and fluffy bhature. A tiffin treat that guarantees satisfaction in every bite!</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/l-1.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(22.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Hyderabadi-DumBiryani</h5>
+               <p class="small">Savor the authentic taste of Hyderabadi Biryani, a fragrant blend of basmati rice, tender meat, and aromatic spices.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/l-2.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(21.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Kebabs</h5>
+               <p class="small">Relish the smoky flavors of Hyderabadi Kebabs, crafted with tender meat and a perfect spice mix. A delectable lunch option that’s bursting with tradition and taste!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-lg-3 col-sm-6">
+            <div class=" menu-item bg-white shadow-on-hover">
+              <img src="assets/d-1.avif" alt="" width="100%">
+              <div class="menu-item-content p-4">
+                <div>
+                  <span>Rated(21.4)</span>
+                  <span class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </div>
+                <h5 class=" mt-1 mb-2">Butternaan</h5>
+                <p class="small">End your day with our soft, freshly made Chapathi paired with flavorful curries. A light and wholesome dinner to keep your evenings delightful</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade show " id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+          <div class=" row gy-4">
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/tiffen.webp" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(5.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Tiffens</h5>
+                  <p class="small">Start your day with our delicious and wholesome tiffin options, crafted to satisfy your morning cravings</p>
+                </div>
+              </div>
+            </div>
+  
+            
+  
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/b-1.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(8.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Dosa</h5>
+                  <p class="small">Start your day with the crispy delight of our signature Dosa, served hot with flavorful chutneys and sambar</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/b-3.jpg" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(8.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Sambar-Vada</h5>
+                  <p class="small">Delight in the classic combo of crispy Vadas soaked in flavorful, aromatic Sambar. A South Indian treat that’s perfect for any time of the day</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/b-2.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(8.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Chole-Bhature</h5>
+                  <p class="small">Chole Bhature, a perfect blend of spicy chickpea curry and fluffy bhature. A tiffin treat that guarantees satisfaction in every bite!</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="tab-pane fade show " id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+          <div class=" row gy-4">
+            
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/lunch.webp" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(12.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Lunch</h5>
+                  <p class="small">From traditional favorites to contemporary delights, we ensure a satisfying midday meal for everyone!</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/l-1.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(22.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Hyderabadi-DumBiryani</h5>
+                 <p class="small">Savor the authentic taste of Hyderabadi Biryani, a fragrant blend of basmati rice, tender meat, and aromatic spices.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/l-2.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(21.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Kebabs</h5>
+                 <p class="small">Relish the smoky flavors of Hyderabadi Kebabs, crafted with tender meat and a perfect spice mix. A delectable lunch option that’s bursting with tradition and taste!</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/d-1.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(21.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Butternaan</h5>
+                  <p class="small">End your day with our soft, freshly made Chapathi paired with flavorful curries. A light and wholesome dinner to keep your evenings delightful</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          </div>
+        
+        <div class="tab-pane fade show " id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+          <div class=" row gy-4">
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/tiffen.webp" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(5.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Tiffens</h5>
+                  <p class="small">Start your day with our delicious and wholesome tiffin options, crafted to satisfy your morning cravings</p>
+                </div>
+              </div>
+            </div>
+
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/b-1.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(8.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Dosa</h5>
+                  <p class="small">Start your day with the crispy delight of our signature Dosa, served hot with flavorful chutneys and sambar</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/b-2.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(8.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Chole-Bhature</h5>
+                  <p class="small">Chole Bhature, a perfect blend of spicy chickpea curry and fluffy bhature. A tiffin treat that guarantees satisfaction in every bite!</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+           
+  
+            <div class=" col-lg-3 col-sm-6">
+              <div class=" menu-item bg-white shadow-on-hover">
+                <img src="assets/d-1.avif" alt="" width="100%">
+                <div class="menu-item-content p-4">
+                  <div>
+                    <span>Rated(21.4)</span>
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                  <h5 class=" mt-1 mb-2">Butternaan</h5>
+                  <p class="small">End your day with our soft, freshly made Chapathi paired with flavorful curries. A light and wholesome dinner to keep your evenings delightful</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+        </div>
+      </div>
+     </div>
+
+     
+     </section>
+        <!--Menu section stops-->
+
+        <!--Feature section starts-->
+        <section id="features" class="bg-cover">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 intro-text">
+                <h1 class="text-white">Why to choose us</h1>
+                <p class="text-white">Choose our restaurant for a delightful dining experience where we serve a variety of freshly prepared breakfasts, hearty lunches, and delicious dinners to satisfy your cravings.With a cozy ambiance and flavors that feel like home, we ensure every meal is memorable. Perfect for families, friends, and food lovers alike!</p>
+              </div>
+            </div>
+
+            <div class="row gy-4">
+              <div class=" col-lg-3 col-sm-6">
+                <div class="feature p-4 text-center">
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-wifi"></i>
+                  </div>
+                  <h4 class="text-white mt-4 mb-2">Free Wifi</h4>
+                  <p class="text-white">"Enjoy your meals while staying connected with our free high-speed Wi-Fi, perfect for work or leisure. Whether you're streaming, browsing, or sharing moments, we've got you covered!"</p>
+                </div>
+              </div>
+
+              <div class=" col-lg-3 col-sm-6">
+                <div class="feature p-4 text-center">
+                  <div class="feature-icon">
+                    <i class="fa-solid fa-light fa-clock"></i>
+                  </div>
+                  <h4 class="text-white mt-4 mb-2">Fast Delivery</h4>
+                  <p class="text-white">"Experience the convenience of our fast and reliable delivery service, bringing your favorite meals straight to your doorstep. Enjoy hot, fresh food with minimal wait time"</p>
+                </div>
+              </div>
+
+              <div class=" col-lg-3 col-sm-6">
+                <div class="feature p-4 text-center">
+                  <div class="feature-icon">
+                    <i class="fa-duotone fa-solid fa-users"></i>
+                
+                  </div>
+                  <h4 class="text-white mt-4 mb-2">Friendly Staff</h4>
+                  <p class="text-white">"Feel welcomed by our warm and friendly staff, dedicated to making your dining experience comfortable and enjoyable. We're here to serve you with a smile and ensure every visit feels special!"</p>
+                </div>
+              </div>
+
+              <div class=" col-lg-3 col-sm-6">
+                <div class="feature p-4 text-center">
+                  <div class="feature-icon">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                
+                  </div>
+                  <h4 class="text-white mt-4 mb-2">Highly Rated</h4>
+                  <p class="text-white">"Join us at our highly-rated restaurant, trusted by countless satisfied customers for exceptional food and service. Discover why we're a top choice for memorable dining!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Feature section ends-->
+
+        <!--Reservation section starts-->
+        <section id="reservation">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 intro-text">
+                <h1>Book Your Table</h1>
+                <p>"Reserve your table with ease through our hassle-free booking system, ensuring your spot for any occasion. Enjoy a seamless dining experience without the wait!"</p>
+              </div>
+            </div>
+
+            <form action="" class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="row gy-3">
+                  <div class="col-md-6 form-group">
+                    <input type="text" placeholder="Enter Name" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="datetime-local" placeholder="Date & Time" class="form-control">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input type="number" placeholder="Number of persons" class="form-control">
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <textarea name="" id="" class="form-control">Message</textarea>
+                  </div>
+                  <div class="col-md-6  form-group">
+                    <a href="#" class=" btn btn-brand ">Book Now</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!--Reservation section ends-->
+        <!--Footer section starts-->
+        <footer>
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="assets/logo.png" alt="" width="20%" style="border-radius: 50px">
+                  <p>Welcome to Burrapadu, where we serve a fusion of traditional and contemporary flavors across breakfast, lunch, and dinner.</p>
+                  <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-play"></i></a>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <h6 class="text-white">CONTACT</h6>
+                  <p>+91 7671897772</p>
+                  <p>vishnuvardhanc117@gmail.com</p>
+                  <p>Burrapadu Restaurant,Near Srinivas center,Nandyal,AP</p>
+                </div>
+                <div class="col-lg-4">
+                  <h6 class="text-white">OPENING HOURS</h6>
+                  <p>Monday-Friday:08:00-22:00</p>
+                  <p>Satuarday-Sunday:08:00-23:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" footer-bottom">
+            <div class=" container">
+              <div class="row justify-content-between">
+                <div class="col-auto">
+                  <p class="mb-0">&copy; Copyrights all reserved</p>
+                </div>
+                <div class="col-auto">
+                  <p class="mb-0">&copy; Designed and developed by <a href="#">vishnu</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+              <!--Footer section ends-->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
